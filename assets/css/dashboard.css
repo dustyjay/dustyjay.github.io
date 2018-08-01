@@ -139,17 +139,18 @@ body{
 
 .other{
     padding: 40px;
+    margin: 0;
     color: #808080;
 }
 
 .other > div{
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
-.pending-header > h2,
-.profit-header > h2,
-.income-header > h2,
-.expenses-header > h2{
+.pending-header > h3,
+.profit-header > h3,
+.income-header > h3,
+.expenses-header > h3{
     color: #808080;
 }
 
@@ -160,6 +161,7 @@ body{
     margin-top: 15px;
     border-radius: 6px;
     padding: 30px;
+    height: 295px;
     background: white;
 }
 
@@ -173,7 +175,7 @@ body{
 
 .time-box > div{
     cursor: pointer;
-    padding: 10px 17px;
+    padding: 10px 15px;
     color: rgba(80,80,80,0.45);
     font-size: 13px;
 }
@@ -185,9 +187,9 @@ body{
 }
 
 .pending .coloring{
-    height: 90px;
+    height: 140px;
     width: 99.5%;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .pending .base{
@@ -210,8 +212,12 @@ body{
     padding-bottom: 15px;
 }
 
+.profit .figures{
+    margin-top: 8px;
+}
+
 .pending .figures > div{
-    margin-right: 8.45%;
+    margin-right: 6.5%;
     float: left;
     color: #c9c9c9;
     font-size: 12px;
@@ -239,13 +245,13 @@ body{
 .income .listing,
 .expenses .listing{
     color: #808080;
-    padding-top: 50px;
     font-size: 14px;
 }
 
-.income .listing .col-4,
-.expenses .listing .col-4{
-    margin-bottom: 35px;
+.income .listing .col-6,
+.expenses .listing .col-6{
+    margin-bottom: 20px;
+    font-size: 10px;
 }
 
 .expenses .listing .col-12{
@@ -253,6 +259,14 @@ body{
     color: rgba(0,0,0,0.5);
 }
 
-.listing .col-4 span{
+.listing .col-6 span{
     margin-left: 10px;
+}
+
+.pie{
+    padding: 0;
+}
+
+.expenses .listing{
+    padding-top: 30px;
 }
