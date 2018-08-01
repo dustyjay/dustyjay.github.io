@@ -1,0 +1,192 @@
+@font-face {
+    font-family: ProductSans;
+    src: url("../fonts/Product Sans Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ProductSans;
+    color: #4f4f4f;
+    letter-spacing: 0.5px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.mont{
+    font-family: Montserrat,sans-serif;
+}
+
+html,
+body{
+    font-family: ProductSans, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+a,
+a:visited,
+a:focus,
+a:hover{
+    text-decoration: none;
+}
+
+input{
+    border: 1px solid #ECF0F3;
+    font-size: 16px;
+    border-radius: 6px;
+}
+input:focus{
+    outline: 1px solid #35B2F9;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: initial;
+}
+h2{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: initial;
+}
+h3{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: initial;
+}
+h4{
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: initial;
+}
+h6{
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.blue{
+    color: #35B2F9;
+}
+.blue-box{
+    background: #35B2F9;
+}
+
+.bold{
+    font-weight: bold;
+}
+.medium{
+    font-weight: 500;
+}
+
+
+.show-margin{
+    padding-top: 160px;
+    padding-bottom: 160px;
+    margin: auto;
+}
+
+.signup{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    background: #35B2F9;
+    background: linear-gradient(to bottom left,#35B2F9 ,rgba(53, 178, 249, 0.69) 64%,rgba(53, 178, 249, 0.2));
+}
+
+.first-one,
+.second-one{
+    position: absolute;
+}
+
+.first-one img,
+.second-one img{
+    width: 95vw;
+}
+
+.signup-box{
+    text-align: center;
+    background: white;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.1);
+}
+
+.signup-box h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.signup-box div:nth-child(2){
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+}
+
+.signup-box .email input{
+    padding: 20px;
+    padding-right: 40px;
+    background: #fcfcfd;
+    max-width: 250px;
+    margin-bottom: 25px;
+}
+
+input::placeholder{
+    color: #889399;
+    opacity: 0.33;
+}
+
+.signup-box .email button{
+    padding: 20px;
+    width: 100%;
+    color: white;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.email td{
+    position: relative;
+}
+
+.signup-box .email i{
+    position: absolute;
+    font-size: 22px;
+    right: 8px;
+    top: 20px;
+    color: #D3D8DB;
+    cursor: pointer;
+}
+
+.terms{
+    max-width: 220px;
+    margin: auto;
+    margin-bottom: 23px;
+}
+
+@media(min-width: 425px){
+    .signup-box .email input{
+        max-width: 300px;
+    }
+
+    .terms{
+        max-width: 280px;
+    }
+}
+
+.google-signup{
+    border: 1px solid #ECF0F3;
+    border-radius: 6px;
+    width: 100%;
+    padding: 20px;
+}
+
+.google-signup a{
+    color: #808080;
+    padding: 20px;
+}

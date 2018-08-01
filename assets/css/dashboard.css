@@ -1,0 +1,138 @@
+.dashboard{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    background: #E5E5E5;
+}
+
+.sidebar{
+    position: fixed;
+    min-height: 100%;
+    background: #ddd;
+    width: 200px;
+    background: white;
+}
+
+.user-name{
+    margin: 0;
+    justify-content: space-between;
+    padding: 23px;
+}
+
+.user-name h6{
+    margin-top: 12px;
+    color: white;
+}
+
+.main-sidebar{
+    /* min-height: 700px; */
+    margin: 0;
+    padding-top: 45px;
+}
+
+.main-sidebar .option{
+    padding: 10px 20px;
+    border-left: 5px solid transparent;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.main-sidebar .option span{
+    position: relative;
+    top: 2px;
+    left: 20px;
+    color: #808080;
+}
+
+.main-sidebar .option.active{
+    border-left: 5px solid #35B2F9;
+}
+
+.header{
+    margin: 0;
+    height: 84px;
+    padding: 15px;
+    position: relative;
+    background: white;
+}
+
+.header-title{
+    padding: 10px 35px;
+}
+
+.header-items{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.main-dashboard{
+    margin: 0;
+}
+
+@media(min-width: 768px){
+    .main-dashboard{
+        position: relative;
+        padding-left: 200px;
+    }
+}
+
+.header-items .invite{
+    border-radius: 2px;
+    position: relative;
+    top: -5px;
+    padding: 14px;
+    margin-right: 10px;
+    border: 1px solid #35B2F9;
+}
+
+.header-items .create{
+    border-radius: 2px;
+    position: relative;
+    top: -5px;
+    padding: 14px;
+    margin-left: 10px;
+    margin-right: 50px;
+    background: #35b2f9;
+    color: white;
+}
+
+.header-items .notification img,
+.header-items .exit img{
+    padding: 5px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.header-items h6{
+    position: relative;
+    top: 3px;
+}
+
+.header-items .create h6{
+    padding-right: 24px;
+}
+
+.header-items .invite h6{
+    padding-left: 12px;
+}
+
+.header-items .notification{
+    position: relative;
+    top: 5px;
+}
+
+.header-items .notification .dot{
+    position: absolute;
+    margin: 0;
+    right: 25%;
+    top: 5%;
+}
+
+.header-items .exit{
+    position: relative;
+    top: 6px;
+}
