@@ -160,7 +160,7 @@ body{
 .expenses-content{
     margin-top: 15px;
     border-radius: 6px;
-    padding: 30px;
+    padding: 25px;
     height: 295px;
     background: white;
 }
@@ -214,6 +214,7 @@ body{
 
 .profit .figures{
     margin-top: 8px;
+    padding: 0 10px;
 }
 
 .pending .figures > div{
@@ -229,8 +230,9 @@ body{
 
 .profit .figures > div{
     color: #c9c9c9;
-    font-size: 12px;
+    font-size: 9px;
     text-align: center;
+    padding: 0;
     padding-bottom: 10px;
 }
 
