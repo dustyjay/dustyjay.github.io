@@ -18,5 +18,5 @@ $(function(){
         else{
             $hide_input.attr('type','text');
         }
-    })
+    });
 });
