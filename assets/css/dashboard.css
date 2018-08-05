@@ -42,6 +42,7 @@ body{
     border-left: 5px solid transparent;
     width: 100%;
     margin-bottom: 50px;
+    transition: 200ms ease-in-out;
 }
 
 .sidebar-mini .main-sidebar .option{
@@ -163,7 +164,17 @@ body{
     transition: width 100ms linear;
 }
 
-.header-items .invite{
+.sidebar-mini .main-sidebar{
+    padding-top: 30px;
+}
+
+.sidebar-mini .low-section{
+    padding-top: 15px;
+    margin: auto;
+}
+
+.header-items .invite,
+.sidebar-mini .invite{
     border-radius: 2px;
     position: relative;
     top: -5px;
@@ -172,7 +183,8 @@ body{
     border: 1px solid #35B2F9;
 }
 
-.header-items .create{
+.header-items .create,
+.sidebar-mini .create{
     border-radius: 2px;
     position: relative;
     top: -5px;
@@ -181,6 +193,24 @@ body{
     margin-right: 50px;
     background: #35b2f9;
     color: white;
+}
+
+.sidebar-mini .invite{
+    position: unset;
+    margin: 0px 10px 0px 24px;
+}
+
+.sidebar-mini .invite img{
+    margin-right: 10px;
+}
+
+.sidebar-mini .create{
+    position: unset;
+    margin: 0;
+}
+
+.sidebar-mini h6{
+    margin: 0;
 }
 
 .header-items .notification img,

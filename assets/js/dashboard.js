@@ -1,7 +1,5 @@
 $(function(){
 
-    $time_text = $('.time-text');
-
     // change active time-box option
 
     $time_box = $(".time-box > div");
@@ -11,6 +9,7 @@ $(function(){
         $this.siblings().removeClass('active');
     });
 
+    $time_text = $('.time-text');
     setInterval(function(){
         if(window.innerWidth < 1264){
             $time_text.removeClass('col-6').addClass('col-8');
@@ -62,6 +61,14 @@ $(function(){
             $(this).removeClass("fade-out");
             $sidebar.css("width","0px");
         }
+    });
+
+
+    // change sidebar options
+
+    $option = $(".option");
+    $option.click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
     });
 
 
