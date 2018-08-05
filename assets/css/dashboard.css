@@ -227,10 +227,12 @@ body{
 
 .header-items .create h6{
     padding-right: 24px;
+    margin-top: 2px;
 }
 
 .header-items .invite h6{
     padding-left: 12px;
+    line-height: 14px;
 }
 
 .header-items .notification{
@@ -268,6 +270,18 @@ body{
     background: white;
 }
 
+.income-content,
+.expenses-content{
+    height: auto;
+}
+
+@media(min-width: 576px){
+    .income-content,
+    .expenses-content{
+        height: 295px;
+    }
+}
+
 .time-box{
     background: #F4F8F9;
     /* width: 270px; */
@@ -296,9 +310,9 @@ body{
 }
 
 .dropdown.col-4 ul{
+    right: 0;
     background: #f4f8f9;
     min-width: unset;
-    width: 70%;
     border-radius: 4px;
     padding: 5px;
 }
@@ -430,8 +444,20 @@ body{
 
 .pie{
     padding: 0;
+    margin: auto;
 }
 
-.expenses .listing{
+.pie img{
+    display: block;
+    margin: auto;
+}
+
+.expenses .listing,
+.income .listing{
     padding-top: 30px;
+    min-height: 205px;
+}
+
+@media(max-width: 576px){
+
 }
