@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SAEON MORUDA</title>
+    <title>HOME | SAEON MORUDA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
 
@@ -11,67 +11,97 @@
     <link rel="stylesheet" href="assets/css/slick-theme.css"/>
     
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/home.css" />
 </head>
 <body>
 
     <div class="container-fluid">
-        <div class="carousel">
-            <div class="slides">
-                <div class="slide1"
-                style='background-image: url("assets/img/slide1.png");'></div>
-                <div class="slide2"
-                style='background-image: url("assets/img/BC-A1.png");'></div>
-                <div class="slide3"
-                style='background-image: url("assets/img/BC-A2.png");'></div>
+        <div class="header">
+            <div class="toleft">
+                <a href="#"><img src="assets/img/logo.svg" alt="logo"/></a>
+            </div>
+            <div class="toright row">
+                    <div class="active">
+                        <a href="#">HOME</a>
+                    </div>
+                    <div>
+                        <a href="music.html">MUSIC + VIDEOS</a>
+                    </div>
+                    <div>
+                        <a href="photos.html">PHOTOS</a>
+                    </div>
+                    <div>
+                        <a href="store.html">STORE</a>
+                    </div>
             </div>
         </div>
 
-        <div class="lower-body">
-            <div class="videos row">
-                <div class="col-12 col-md-6 youtube">
-                    <div class="video-text">
-                        <h3 class="bold">WATCH</h3>
-                        <h4 class="bold">SAEON MORUDA - Adura Lyric Illustration Video</h4>
-                    </div>
+        <div class="carousel home">
+            <div class="slides">
+                <div class="slide1"
+                style='background-image: url("assets/img/BC-A3.png");'></div>
+                <div class="slide2"
+                style='background-image: url("assets/img/BC-A4.png");'></div>
+                <div class="slide3"
+                style='background-image: url("assets/img/BC-A5.png");'></div>
+            </div>
+        </div>
+
+        <div class="latest-video">
+            <h3 class="bold">LATEST VIDEOS</h3>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-sm-5 col-md-4 video-text">
+                    <h3>WATCH</h3>
+                    <h4>
+                        SAEON MORUDA - Adura Lyric Illustration Video
+                    </h4>
+                    <hr>
+                </div>
+                <div class="col-12 col-sm-7 col-md-8 video-video">
                     <iframe src="https://www.youtube.com/embed/0Pi5dbdryHY?rel=0"
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
-                <div class="vr"></div>
-                <div class="col-12 col-md-6 spotify">
-                    <div class="video-text">
-                        <h3 class="bold">LISTEN</h3>
-                        <h4 class="bold">SAEON MORUDA - Adura Lyric Illustration Video</h4>
-                    </div>
+            </div>
+        </div>
+
+        <div class="music">
+            <div class="row">
+                <div class="col-12 col-sm-5">
                     <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380"
                     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
-            </div>
-
-            <div class="signup">
-                <div class="signup-text">
-                    <h3 class="bold">SIGN UP FOR<br>SAEON MORUDA UPDATES</h3>
-                </div>
-                <div class="signup-form">
-                    <form action="https://formspree.io/jarish001@gmail.com" method="POST">
-                        <table>
-                            <tr>
-                                <td>
-                                    <input class="bold" type="email" name="_replyto" placeholder="Email address"/>
-                                </td>
-                                <td>
-                                    <button class="bold" type="submit">SIGN UP</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
-                <div class="enter-site">
-                    <a href="home.html"><h5>ENTER SITE</h5></a>
+                <div class="col-12 col-sm-7 music-text">
+                    <h1>MUSIC</h1>
+                    <h5>LISTEN TO</h5>
+                    <h2>ADURA</h2>
+                    <hr>
+                    <h4>STREAMING FROM</h4>
+                    <div class="music-links">
+                        <a class="bold" href="#">SPOTIFY</a>
+                        <a class="bold" href="#">APPLE MUSIC</a>
+                        <a class="bold" href="#">TIDAL</a>
+                        <a class="bold" href="#">YOUTUBE</a>
+                        <a class="bold" href="#">SOUNCLOUD</a>
+                        <a class="bold" href="#">DEEZER</a>
+                        <a class="bold" href="#">BOOM PLAY</a>
+                        <a class="bold" href="#">MTN MUSIC+</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer row">
+        <div class="big-lady">
+            <div class="insta-pix">
+                <img src="assets/img/insta-pix.png" alt="insta-pix"/>
+            </div>
+            <div class="instagram">
+                <h1>INSTAGRAM</h1>
+                <a href="#">FOLLOW</a>
+            </div>
+        </div>
+
+        <div class="footer home row">
             <div class="socials">
                 <div>
                     <a href="https://twitter.com/SAEONMORUDA">
@@ -126,6 +156,7 @@
     </div>
     
 </body>
+
     <script src="assets/js/jquery3.3.1.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
