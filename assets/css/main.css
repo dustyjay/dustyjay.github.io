@@ -259,6 +259,8 @@ input::-moz-placeholder{
 .footer{
     background: #CEC40D;
     margin: 0;
+    position: relative;
+    top: -2px;
     padding: 0px 20px;
 }
 
