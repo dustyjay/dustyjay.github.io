@@ -57,10 +57,9 @@
     float: right;
     position: fixed;
     z-index: 20;
-    /* padding: 15% 5%; */
     right: 0;
     top: 0;
-    transition: width 100ms linear;
+    transition: width 600ms ease-in-out;
     box-shadow: 0px 0px 20px 1px rgba(255,255,255,0.1);
 }
 
@@ -76,6 +75,14 @@
     .sidebar-mini{
         display: none;
     }
+}
+
+.sidebar-mini > div{
+    margin-left: 50px;
+}
+
+.sidebar-mini > div:first-child{
+    margin-top: 100px;
 }
 
 .sidebar-mini > div,
@@ -208,6 +215,7 @@
         text-align: left;
     }
     .music-text hr{
+        margin-left: 0;
         margin-right: 58%;
     }
 }
@@ -226,18 +234,20 @@
     margin-bottom: 25px;
 }
 
-.biglady{
-    background: linear-gradient(to left,rgba(220,220,220,0.8),rgba(252,252,252,1.0)) ,url(../img/photos.png);
-    background-position: right center;
-    background-repeat: no-repeat;
-}
-
 .big-lady{
     position: relative;
     z-index: -1;
     width: 100%;
     min-height: 2100px;
-    
+    background: linear-gradient(to left,rgba(220,220,220,0.8),rgba(252,252,252,1.0)) ,url(../img/photos.png);
+    background-position: 60% 100%;
+    background-repeat: no-repeat;
+}
+
+@media(min-width: 768px){
+    .big-lady{
+        background-position: right center;
+    }
 }
 
 .big-lady .instagram{

@@ -24,16 +24,14 @@ $(function(){
 
     $navbar.click(function(){
         $sidebar.css({
-            "width":"240px",
-            "padding": "15% 5%"
+            "width":"240px"
         });
         $screen.addClass('fade-out');
     });
 
     $close_sidebar.click(function(){
         $sidebar.css({
-            "width":"0px",
-            "padding": "0px"
+            "width":"0px"
         });
         $screen.removeClass('fade-out');
     });
@@ -42,8 +40,7 @@ $(function(){
         if($sidebar.css("width") == "240px"){
             $(this).removeClass("fade-out");
             $sidebar.css({
-                "width":"0px",
-                "padding": "0px"
+                "width":"0px"
             });
         }
     });
