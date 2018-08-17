@@ -1,3 +1,15 @@
+.photos.big-lady,
+.store.big-lady {
+    background-position: 60% 80%;
+}
+
+@media (min-width: 768px){
+    .photos.big-lady,
+    .store.big-lady {
+        background-position: right;
+    }
+}
+
 .photos-body{
     padding-top: 50px;
     padding-bottom: 300px;

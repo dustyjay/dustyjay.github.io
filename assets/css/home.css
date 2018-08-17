@@ -33,13 +33,14 @@
 }
 
 .header .toright > div a{
+    font-family: circular, serif;
     color: #121313;
     padding: 10px;
     margin: 20px;
 }
 
 .header .toright > div.active a{
-    color: #7D7D7D;
+    color: #ADADAD;
 }
 
 .navbar{
@@ -49,6 +50,10 @@
     top: -6px;
     padding: 10px;
     cursor: pointer;
+}
+
+.sidebar-mini *{
+    font-family: circular, serif;
 }
 
 .sidebar-mini{
@@ -195,6 +200,12 @@
 
 .music-text{
     text-align: center;
+}
+
+.music-text *,
+.insta *,
+.footer *{
+    font-family: circular, serif;
 }
 
 .music-text hr{

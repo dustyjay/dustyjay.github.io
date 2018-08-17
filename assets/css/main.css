@@ -11,6 +11,15 @@
     font-family: Trajan;
 }
 
+@font-face{
+    src: url("../fonts/c-book.ttf");
+    font-family: circular;
+}
+
+.circular{
+    font-family: circular, serif;
+}
+
 body{
     overflow-x: hidden;
     min-height: 100vh;
