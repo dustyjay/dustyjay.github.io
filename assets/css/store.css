@@ -1,0 +1,10 @@
+.container-fluid.store{
+    display: flex;
+    justify-content: center;
+}
+
+.store-body{
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+}
