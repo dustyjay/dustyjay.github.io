@@ -63,6 +63,27 @@ h4{
 h5{
     font-size: 12px;
 }
+h6{
+    font-size: 24px;
+}
+
+@media(min-width: 468px){
+    h6{
+        font-size: 24px;
+    }
+}
+
+@media(min-width: 568px){
+    h6{
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 1024px){
+    h6{
+        font-size: 50px;
+    }
+}
 
 @media(min-width: 768px){
     h1{
@@ -79,6 +100,15 @@ h5{
     }
     h5{
         font-size: 14px;
+    }
+    h6{
+        font-size: 40px;
+    }
+}
+
+@media(min-width: 1024px){
+    h6{
+        font-size: 50px;
     }
 }
 
@@ -100,15 +130,63 @@ h5{
     /* padding: 20px; */
 }
 
-.slides .slide1,
-.slides .slide2,
-.slides .slide3,
-.slides .slide4{
+.slider{
     height: 100vh;
-    min-height: 500px;
+    /* min-height: 400px; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.slides div,
+.slides{
+    text-align: center;
+    height: 100%;
+}
+
+.slides .slider{
+    padding: 80px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media(min-width: 768px){
+    .slides .slider{
+        padding: 100px 80px;
+    }
+}
+
+.slides h6{
+    color: #CEC40D;
+    padding-top: 10vh;
+    /* padding-bottom: 20%; */
+}
+
+.slides img{
+    display: block;
+    text-align: center;
+    margin: auto;
+    /* width: 100%; */
+}
+
+img.mixtape,
+img.birth{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+}
+
+img.birth{
+    bottom: 10%;
+    width: 80%;
+    max-width: 400px;
+}
+
+img.saeon{
+    width: 100%;
+    max-width: 500px;
 }
 
 .slick-arrow{
