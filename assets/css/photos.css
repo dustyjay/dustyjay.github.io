@@ -1,0 +1,47 @@
+.photos-body{
+    padding-top: 50px;
+    padding-bottom: 300px;
+    width: 85%;
+    margin: auto;
+}
+
+.photos-body img{
+    width: 98%;
+    display: block;
+    margin: auto;
+}
+
+.photos-body div{
+    margin-top: 100px
+}
+
+.photos-body .row{
+    margin: 0;
+}
+
+@media(min-width: 576px){
+    .photos-body > div > div:nth-child(even){
+        margin-top: 140px;
+    }
+}
+
+@media(min-width: 768px){
+    .photos-body > div > div:nth-child(even){
+        margin-top: 100px;
+    }
+    .photos-body > div > div:nth-child(2),
+    .photos-body > div > div:nth-child(2n+3){
+        margin-top: 140px;
+    }
+    .photos-body > div > div:nth-child(3n){
+        margin-top: 180px;
+    }
+}
+
+/* .photos-body div.low{
+    margin-top: 200px;
+}
+
+.photos-body div.lower{
+    margin-top: 300px;
+} */

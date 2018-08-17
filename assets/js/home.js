@@ -20,6 +20,7 @@ $(function(){
     $navbar = $(".navbar");
     $screen = $(".container-fluid");
     $sidebar = $(".sidebar-mini");
+    $sidebar_links = $(".sidebar-mini a");
     $close_sidebar = $("#close-side");
 
     $navbar.click(function(){
@@ -29,7 +30,7 @@ $(function(){
         $screen.addClass('fade-out');
     });
 
-    $close_sidebar.click(function(){
+    $sidebar_links.click(function(){
         $sidebar.css({
             "width":"0px"
         });

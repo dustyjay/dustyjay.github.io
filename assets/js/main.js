@@ -1,4 +1,13 @@
 $(function(){
+
+    // Smooth scrolling effect
+    $("a[href^='#']").click(function(e){
+        var elem = $(this.getAttribute('href'));
+        if(elem.length) $('html,body').stop().animate({'scrollTop':elem.offset().top},1000);
+        e.preventDefault();
+    });
+
+
     $(".slides").slick({
         arrows: true,
         autoplay: true,
@@ -22,7 +31,7 @@ $(function(){
         // autoplaySpeed: 8000,
         slidesToShow: 6,
         slidesToScroll: 2,
-        prevArrow: '<span class="prev-arrow"><img src="assets/img/left-arrow.svg"/></span>',
+        prevArrow: '<span class="prev-arrow"><img src="assets/img/disco-right.svg"/></span>',
         nextArrow: '<span class="next-arrow"><img src="assets/img/disco-right.svg"/></span>',
        
         responsive: [
