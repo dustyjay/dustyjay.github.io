@@ -1,9 +1,9 @@
 .header{
-    padding: 30px 10px 10px;
+    padding: 25px 10px 25px;
     position: fixed;
     background: white;
     z-index: 20;
-    top: 0;
+    top: 0px;
     width: 100%;
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
 }
@@ -14,7 +14,50 @@
 
 @media(min-width: 468px){
     .header{
-        padding: 30px 60px 10px;
+        padding: 25px 60px 25px;
+    }
+}
+
+.container-fluid.home{
+    margin-top: 0px
+}
+
+.note{
+    width: 100%;
+    z-index: 200;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: -70px;
+    background: black!important;
+    height: 70px!important;
+}
+
+.note h5,
+.note span{
+    /* font-size: 18px; */
+    color: white;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.note span{
+    padding-left: 10px;
+    /* display: none; */
+}
+
+.note img:first-child{
+    width: 45%;
+}
+
+.note img:last-child{
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+@media(min-width: 425px){
+    .note img:first-child{
+        width: auto;
     }
 }
 
@@ -239,6 +282,10 @@
     -ms-text-underline-position: under;
     color: black;
     line-height: 50px;
+}
+
+.music-links a:hover{
+    color: rgba(0,0,0,0.4);
 }
 
 .music-text > h5{

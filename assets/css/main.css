@@ -23,6 +23,8 @@
 body{
     overflow-x: hidden;
     min-height: 100vh;
+    position: relative;
+    z-index: -10;
 }
 
 li{
@@ -64,24 +66,18 @@ h5{
     font-size: 12px;
 }
 h6{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 @media(min-width: 468px){
     h6{
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
 @media(min-width: 568px){
     h6{
-        font-size: 30px;
-    }
-}
-
-@media(min-width: 1024px){
-    h6{
-        font-size: 50px;
+        font-size: 28px;
     }
 }
 
@@ -102,19 +98,21 @@ h6{
         font-size: 14px;
     }
     h6{
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
 @media(min-width: 1024px){
     h6{
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
 .container-fluid{
     padding: 0;
     max-width: 1960px;
+    position: relative;
+    z-index: -10;
 }
 
 .carousel{
@@ -151,6 +149,10 @@ h6{
     position: relative;
 }
 
+.slides.index .slider{
+    padding: 20px;
+}
+
 @media(min-width: 768px){
     .slides .slider{
         padding: 100px 80px;
@@ -159,8 +161,22 @@ h6{
 
 .slides h6{
     color: #CEC40D;
-    padding-top: 10vh;
+    padding-top: 15vh;
     /* padding-bottom: 20%; */
+}
+
+.slides.index h6{
+    padding-top: 8vh;
+}
+
+@media(min-width: 768px){
+    .slides h6{
+        padding-top: 10vh
+    }
+
+    .slides.index h6{
+        padding-top: 20vh;
+    }
 }
 
 .slides img{
@@ -234,14 +250,20 @@ img.saeon{
     border-left: 1px solid #333;
 }
 
+body.context_landing{
+    /* overflow: hidden!important; */
+}
+
+.videos .spotify iframe{
+    height: 100%;
+    margin-top: 8px;
+    max-height: 400px
+}
+
 @media(min-width: 768px){
 
     .videos .youtube{
         margin-left: -5px;
-    }
-    .videos .spotify iframe{
-        /* float: right; */
-        /* margin: 0; */
     }
     .videos .vr{
         display: block;
@@ -250,12 +272,68 @@ img.saeon{
 
 .videos .video-text{
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    min-height: 130px;
+    /* margin-bottom: 30px; */
 }
 
 .videos .video-text h4{
     line-height: 40px;
+}
+
+.video-text .dropdown button{
+    position: relative;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent none repeat scroll 0px 0px;
+    text-align: left;
+    border-image: none;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-family: Trajan;
+}
+
+.video-text .dropdown button span{
+    position: absolute;
+    right: 10px;
+    top: 20%;
+}
+
+.video-text .dropdown ul{
+    background: #CEC40D;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+}
+
+.video-text .dropdown li{
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.video-text .dropdown li a{
+    color: black;
+    display: block;
+    width: 100%;
+}
+
+.video-text .dropdown li img{
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+
+.video-text .dropdown li:hover{
+    background: rgba(0,0,0,.1);
+}
+
+.dropdown-toggle::after{
+    display: none;
 }
 
 /* sign up */
@@ -329,6 +407,7 @@ input::-moz-placeholder{
     background: black;
     color: #CEC40D;
     width: fit-content;
+    width: -moz-fit-content;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 50px;
@@ -353,6 +432,8 @@ input::-moz-placeholder{
 
 .footer .socials{
     width: fit-content;
+    width: -moz-fit-content;
+    justify-content: center;
     margin: auto;
     margin-bottom: 30px;
 }
@@ -366,6 +447,11 @@ input::-moz-placeholder{
     margin-right: 15px;
     height: 30px;
     width: auto;
+}
+
+.footer .socials img:hover{
+    opacity: 0.8;
+    transition: opacity 300ms ease-in-out;
 }
 
 .footer .socials div:last-child img{

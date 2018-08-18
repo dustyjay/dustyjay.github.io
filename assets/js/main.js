@@ -16,7 +16,7 @@ $(function(){
         nextArrow: '<span class="next-arrow"><img src="assets/img/right-arrow.svg"/></span>',
         responsive: [
             {
-                breakpoint: 426,
+                breakpoint: 568,
                 settings: {
                     arrows: false
                 }
@@ -53,14 +53,16 @@ $(function(){
                 breakpoint: 568,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             },
             {
                 breakpoint: 468,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             }
             // You can unslick at a given breakpoint now by adding:
