@@ -10,8 +10,8 @@ $(function(){
 
     $(".slides").slick({
         arrows: true,
-        // autoplay: true,
-        autoplaySpeed: 7000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         prevArrow: '<span class="prev-arrow"><img src="assets/img/left-arrow.svg"/></span>',
         nextArrow: '<span class="next-arrow"><img src="assets/img/right-arrow.svg"/></span>',
         responsive: [
@@ -26,11 +26,11 @@ $(function(){
     $(".disco-slide").slick({
         infinite: false,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         // mobileFirst: true,
-        // autoplaySpeed: 8000,
+        autoplaySpeed: 8000,
         slidesToShow: 6,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         prevArrow: '<span class="prev-arrow"><img src="assets/img/disco-right.svg"/></span>',
         nextArrow: '<span class="next-arrow"><img src="assets/img/disco-right.svg"/></span>',
        
