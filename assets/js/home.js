@@ -3,7 +3,7 @@ $(function(){
     $close_note = $(".note img:last-child");
     $note = $(".note");
     $header = $(".header");
-    $con_fluid = $(".container-fluid.home");
+    $con_fluid = $(".container-fluid:not(.index)");
 
     $note.css({
         "top": "0px",
