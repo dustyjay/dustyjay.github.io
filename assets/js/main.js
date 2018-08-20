@@ -31,8 +31,8 @@ $(function(){
         autoplaySpeed: 8000,
         slidesToShow: 6,
         slidesToScroll: 1,
-        prevArrow: '<span class="prev-arrow"><img src="assets/img/disco-right.svg"/></span>',
-        nextArrow: '<span class="next-arrow"><img src="assets/img/disco-right.svg"/></span>',
+        prevArrow: '<span class="prev-arrow"><img src="assets/img/right-arrow.svg"/></span>',
+        nextArrow: '<span class="next-arrow"><img src="assets/img/right-arrow.svg"/></span>',
        
         responsive: [
             {

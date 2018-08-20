@@ -41,13 +41,18 @@
 }
 
 .disco-slide .slick-arrow{
+    width: 10px;
     top: 25%;
 }
 
 .disco-slide .slick-arrow img{
-    background: #CEC40D;
+    /* background: #CEC40D; */
     padding: 3px 6px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+}
+
+.disco-slide .slick-arrow.next-arrow{
+    right: 30px;
 }
 
 .disco-slide .slick-arrow.prev-arrow{
