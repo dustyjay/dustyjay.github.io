@@ -70,4 +70,58 @@ $(function(){
             // instead of a settings object
         ],
     });
+
+    $iframes = $(".spotify iframe");
+
+    $youtube_frame = $("#youtube-frame");
+    $tidal_frame = $("#tidal-frame");
+    $spotify_frame = $("#spotify-frame");
+    $soundcloud_frame = $("#soundcloud-frame");
+    $itunes_frame = $("#itunes-frame");
+
+
+    // change streaming form
+    $stream = $("img.stream");
+    $streams = $(".video-text .dropdown-menu li img");
+
+    $streams.click(function(){
+        $this = $(this);
+        var new_src = $this.attr("src");
+        var current_src = $stream.attr("src");
+
+        var new_id = $this.attr("id");
+        var current_id = $stream.attr("id");
+        
+        $stream.attr("src",new_src);
+        $this.attr("src",current_src);
+        
+        $stream.attr("id",new_id);
+        $this.attr("id",current_id);
+
+        if(new_id == "youtube"){
+            $iframes.hide(400);
+            $youtube_frame.show(600);
+        }
+
+        if(new_id == "tidal"){
+            $iframes.hide(400);
+            $tidal_frame.show(600);
+        }
+
+        if(new_id == "soundcloud"){
+            $iframes.hide(400);
+            $soundcloud_frame.show(600);
+        }
+
+        if(new_id == "spotify"){
+            $iframes.hide(400);
+            $spotify_frame.show(600);
+        }
+
+        if(new_id == "itunes"){
+            $iframes.hide(400);
+            $itunes_frame.show(600);
+        }
+    });
+
 });

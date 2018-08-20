@@ -52,7 +52,7 @@
                         <h3 class="bold">WATCH</h3>
                         <h4 class="bold">SAEON MORUDA - Adura Lyric Illustration Video</h4>
                     </div>
-                    <iframe src="https://www.youtube.com/embed/SzS_gVnplOs?autoplay=1" 
+                    <iframe src="https://www.youtube.com/embed/SzS_gVnplOs?rel=0" 
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 <div class="vr"></div>
@@ -61,30 +61,47 @@
                         <h3 class="bold">LISTEN</h3>
                         <div class="dropdown">
                             <button class="dropdown-toggle" type="button" data-toggle="dropdown">STREAMING FROM
-                            <span><img src="assets/img/spotify.svg" alt="spotify"/>
-                            </span></button>
+                                <span>
+                                    <img id="spotify" class="stream" src="assets/img/spotify.svg" alt="spotify"/>
+                                </span>
+                                <span>
+                                    <img src="assets/img/arrow-down.svg" alt="arrow-down"/>
+                                </span>
+                            </button>
                             <ul class="dropdown-menu">
                                 <li>
                                     <!-- <a href="https://soundcloud.com/saeonmoruda/tracks">SOUNDCLOUD</a> -->
-                                    <img src="assets/img/soundcloud.svg" alt="soundcloud"/>
+                                    <img id="soundcloud" src="assets/img/soundcloud.svg" alt="soundcloud"/>
                                 </li>
                                 <li>
                                     <!-- <a href="https://tidal.com/browse/artist/8513907">TIDAL</a> -->
-                                    <img src="assets/img/tidal.svg" alt="tidal"/>
+                                    <img id="tidal" src="assets/img/tidal.svg" alt="tidal"/>
                                 </li>
                                 <li>
                                     <!-- <a href="https://itunes.apple.com/us/artist/saeon-moruda/1205325080">APPLE MUSIC</a> -->
-                                    <img src="assets/img/apple.svg" alt="itunes"/>
+                                    <img id="itunes" src="assets/img/apple.svg" alt="itunes"/>
                                 </li>
                                 <li>
                                     <!-- <a href="https://www.youtube.com/channel/UCUsH2jejmn3K6XPPoiC-x0w">YOUTUBE</a> -->
-                                    <img src="assets/img/youtube.svg" alt="youtube"/>
+                                    <img id="youtube" src="assets/img/youtube.svg" alt="youtube"/>
                                 </li>
                             </ul>
                         </div> 
                     </div>
-                    <iframe src="https://open.spotify.com/artist/377gJKB1fmlNkkPJcUY6gh"
+                    <iframe id="spotify-frame" src="https://open.spotify.com/artist/377gJKB1fmlNkkPJcUY6gh"
                     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+                    <iframe id="soundcloud-frame" src="https://www.youtube.com/embed/SzS_gVnplOs?rel=0" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                    <iframe id="tidal-frame" src="https://www.youtube.com/embed/SzS_gVnplOs?rel=0" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                    <iframe id="itunes-frame" src="https://www.youtube.com/embed/SzS_gVnplOs?rel=0" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                    <iframe id="youtube-frame" src="https://www.youtube.com/embed/SzS_gVnplOs?rel=0" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -93,12 +110,12 @@
                     <h3 class="bold">SIGN UP FOR<br>SAEON MORUDA UPDATES</h3>
                 </div>
                 <div class="signup-form">
-                    <form action="https://formspree.io/jarish001@gmail.com" method="POST">
+                    <form action="https://formspree.io/jarish001@gmail.com" method="POST" target="_blank">
                         <table>
                             <tr>
                                 <td>
                                     <input class="bold circular" type="email" name="_replyto" placeholder="Email address"/>
-                                    <input type="hidden" name="_next" value="/saeon/home.html"/>
+                                    <input type="hidden" name="_next" value="/home.html"/>
                                 </td>
                                 <td>
                                     <button class="bold circular" type="submit">SIGN UP</button>
