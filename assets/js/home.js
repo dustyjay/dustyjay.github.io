@@ -26,7 +26,7 @@ $(function(){
             "transition": "top 500ms linear"
         });
         $header.css({
-            "top": "0px",
+            "top": "-1px",
             "transition": "top 500ms linear"
         });
         $con_fluid.css({
