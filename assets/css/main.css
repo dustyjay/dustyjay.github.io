@@ -185,7 +185,8 @@ h6 br{
 .slides .slider{
     padding: 80px 20px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: black;
     position: relative;
 }
 
@@ -199,7 +200,8 @@ h6 br{
 }
 
 .slider.first img.saeon-img{
-    height: 50%;
+    width: 90%;
+    max-width: 350px;
     position: absolute;
     top: 0;
     left: 0;
@@ -238,7 +240,7 @@ h6 br{
 @media(min-width: 768px){
     
     .slides.index img.saeon{
-        padding-top: 10vh;
+        padding-top: 8vh;
     } 
 }
 
@@ -264,8 +266,9 @@ img.birth{
 }
 
 img.saeon{
-    width: 100%;
-    max-width: 500px;
+    width: 50%;
+    max-width: 400px;
+    min-width: 300px;
 }
 
 .slick-arrow{
@@ -535,7 +538,7 @@ input::-moz-placeholder{
 .footer .socials img{
     padding: 5px;
     margin-right: 15px;
-    height: 30px;
+    height: 25px;
     width: auto;
 }
 

@@ -65,6 +65,10 @@
     float: left;
 }
 
+.toleft img{
+    width: 85%;
+}
+
 .header .toright{
     float: right;
     margin-top: 4px;
