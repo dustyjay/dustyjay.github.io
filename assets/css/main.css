@@ -24,7 +24,7 @@ body{
     overflow-x: hidden;
     min-height: 100vh;
     position: relative;
-    z-index: -10;
+    z-index: -20;
 }
 
 li{
@@ -66,30 +66,51 @@ h5{
     font-size: 12px;
 }
 h6{
-    font-size: 1.6pc;
+    font-size: 1.3pc;
+    /* line-height: 2rem; */
+    /* font-weight: 600; */
+}
+h6 .botbc{
+    /* font-size: 1.5pc; */
+}
+
+h6 br{
+    line-height: 130%;
 }
 
 @media(min-width: 375px){
     h6{
-        font-size: 1.8pc;
+        font-size: 1.5pc;
+    }
+    h6 .botbc{
+        /* font-size: 1.7pc; */
     }
 }
 
 @media(min-width: 400px){
     h6{
-        font-size: 2pc;
+        font-size: 1.8pc;
+    }
+    h6 .botbc{
+        /* font-size: 2pc; */
     }
 }
 
 @media(min-width: 468px){
     h6{
-        font-size: 28px;
+        font-size: 24px;
+    }
+    h6 .botbc{
+        /* font-size: 22px; */
     }
 }
 
 @media(min-width: 568px){
     h6{
-        font-size: 30px;
+        font-size: 28px;
+    }
+    h6 .botbc{
+        /* font-size: 26px; */
     }
 }
 
@@ -110,13 +131,20 @@ h6{
         font-size: 14px;
     }
     h6{
-        font-size: 35px;
+        font-size: 30px;
+    }
+    
+    h6 .botbc{
+        /* font-size: 30px; */
     }
 }
 
 @media(min-width: 1024px){
     h6{
-        font-size: 45px;
+        font-size: 36px;
+    }
+    h6 .botbc{
+        /* font-size: 36px; */
     }
 }
 
@@ -167,14 +195,27 @@ h6{
 }
 
 .slider.first{
-    background-position: center center;
-    background-size: cover;
+    background-color: #000;
+}
+
+.slider.first img.saeon-img{
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 @media(min-width: 768px){
     .slides .slider{
         padding: 100px 80px;
     }
+}
+
+.slides h6 span.botbc{
+    color: #CEC40D;
 }
 
 .slides h6{
@@ -187,21 +228,18 @@ h6{
     margin: auto;
     height: 100px;
     height: fit-content;
-    padding: 0px 5px;
+    padding: 0 5%;
 }
 
 .slides.index img.saeon{
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
 @media(min-width: 768px){
-    /* .slides h6{ */
-        /* padding-top: 10vh
-    }
-
-    .slides.index h6{
-        padding-top: 20vh;
-    } */
+    
+    .slides.index img.saeon{
+        padding-top: 10vh;
+    } 
 }
 
 .slides img{
@@ -216,7 +254,7 @@ img.birth{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 5%;
+    bottom: 6%;
 }
 
 img.birth{
