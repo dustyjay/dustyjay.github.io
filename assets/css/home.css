@@ -94,9 +94,13 @@
     display: block;
     float: right;
     position: relative;
-    top: -6px;
+    top: -10px;
     padding: 10px;
     cursor: pointer;
+}
+
+.navbar img{
+    width: 25px;
 }
 
 .sidebar-mini *{
@@ -243,6 +247,7 @@
     position: relative;
     top: -10px;
     width: 100%;
+    min-height: 315px;
 }
 
 .music-links{

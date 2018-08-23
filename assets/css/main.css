@@ -185,8 +185,7 @@ h6 br{
 .slides .slider{
     padding: 80px 20px;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color: black;
+    background-size: cover;
     position: relative;
 }
 
@@ -224,7 +223,7 @@ h6 br{
     bottom: 0;
     color: #CEC40D;
     position: absolute;
-    top: 0;
+    top: -10%;
     left: 0;
     right: 0;
     margin: auto;
@@ -425,6 +424,18 @@ img.saeon{
     transition: 200ms ease-in-out;
 }
 
+.video-text img:not(.img-reg){
+    width: 50px;
+}
+
+.video-text button img:not(.img-reg){
+    width: 25px;
+}
+
+.dropdown-backdrop{
+    z-index: 9;
+}
+
 .dropdown-toggle::after{
     display: none;
 }
@@ -537,14 +548,14 @@ input::-moz-placeholder{
 
 .footer .socials img{
     padding: 5px;
-    margin-right: 15px;
+    margin-right: 10px;
     height: 25px;
     width: auto;
 }
 
 .footer .socials img:hover{
     opacity: 0.8;
-    transition: opacity 300ms ease-in-out;
+    /* transition: opacity 300ms ease-in-out; */
 }
 
 .footer .socials div:last-child img{
