@@ -202,7 +202,7 @@ h6 br{
     width: 90%;
     max-width: 350px;
     position: absolute;
-    top: 0;
+    top: -5vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -565,6 +565,6 @@ input::-moz-placeholder{
 .footer .copyright h5{
     text-align: center;
     padding-bottom: 25px;
-    color: #282829;
+    color: #000;
     letter-spacing: -0.36px;
 }

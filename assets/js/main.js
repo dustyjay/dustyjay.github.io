@@ -52,7 +52,7 @@ $(function(){
             {
                 breakpoint: 568,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     arrows: false
                 }
@@ -60,7 +60,7 @@ $(function(){
             {
                 breakpoint: 468,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     arrows: false
                 }

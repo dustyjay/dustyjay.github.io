@@ -35,7 +35,7 @@ $(function(){
         });
     });
 
-    $navbar = $(".navbar");
+    $navbar = $(".navbar img");
     $screen = $(".container-fluid");
     $sidebar = $(".sidebar-mini");
     $sidebar_links = $(".sidebar-mini a");

@@ -1,6 +1,7 @@
 .disco{
     padding-top: 100px;
     padding-left: 10%;
+    padding-right: 2%;
     padding-bottom: 30px;
     margin: auto;
     background: rgba(226, 226, 233, 0.5);
@@ -30,7 +31,7 @@
     float: right;
     margin-bottom: 10px;
 }
-
+/* 
 .disco-slide .slick-slide:last-child h5{
     padding-left: 15%;
 }
@@ -38,7 +39,7 @@
 .disco-slide .slick-slide:last-child img{
     float: left;
     margin-left: 15%;
-}
+} */
 
 .disco-slide .slick-arrow{
     width: 10px;
@@ -93,7 +94,13 @@
 }
 
 .other-body .video-text{
-    margin-left: 20px;
+    margin-left: 0px;
+}
+
+@media(min-width: 768px){
+    .other-body .video-text{
+        margin-left: 20px;
+    }
 }
 
 .music .other-body .row{
