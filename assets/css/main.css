@@ -568,3 +568,8 @@ input::-moz-placeholder{
     color: #000;
     letter-spacing: -0.36px;
 }
+
+.footer iframe{
+    position: relative;
+    top: -1px;
+}
