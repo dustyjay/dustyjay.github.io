@@ -17,7 +17,7 @@ $(function(){
 
     $con_fluid.css({
         "margin-top": "70px",
-        "transition": "margin-top 2000ms linear"
+        "transition": "margin-top 2000ms linear,opacity 300ms ease-in-out"
     });
 
     $close_note.click(function(){
@@ -31,7 +31,7 @@ $(function(){
         });
         $con_fluid.css({
             "margin-top": "0px",
-            "transition": "margin-top 500ms linear"
+            "transition": "margin-top 500ms linear,opacity 300ms ease-in-out"
         });
     });
 
