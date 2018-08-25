@@ -247,7 +247,7 @@
     font-family: circular, sans-serif;
 }
 
-.music iframe{
+.music iframe:not(.follow){
     position: relative;
     top: -10px;
     width: 100%;
@@ -287,8 +287,8 @@
 
 @media(min-width: 576px){
         
-    .music iframe{
-        top: 50px;
+    .music iframe:not(.follow){
+        /* top: 50px; */
         right: 20px;
     }
     .music-text{
