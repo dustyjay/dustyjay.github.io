@@ -124,30 +124,30 @@ $(function(){
         }
     });
 
-    $countdown = $(".container-fluid.clock");
-    $index = $(".container-fluid.index");
-    $body = $("#index");
+    // $countdown = $(".container-fluid.clock");
+    // $index = $(".container-fluid.index");
+    // $body = $("#index");
 
-    $body.css({
-        "max-height": "100vh",
-        "min-height": "500px",
-        "overflow-y": "hidden"
-    });
+    // $body.css({
+    //     "max-height": "100vh",
+    //     "min-height": "500px",
+    //     "overflow-y": "hidden"
+    // });
 
-    setTimeout(function(){
-        $countdown.css({
-            "top": "-100vh",
-            "transition": "top 3000ms linear"
-        });
-        $index.css({
-            "top": "0px",
-            "transition": "top 3000ms linear"
-        });
-        $body.css({
-            "max-height": "unset",
-            "min-height": "500px",
-            "overflow-y": "auto"
-        });
-    },8000);
+    // setTimeout(function(){
+    //     $countdown.css({
+    //         "top": "-100vh",
+    //         "transition": "top 3000ms linear"
+    //     });
+    //     $index.css({
+    //         "top": "0px",
+    //         "transition": "top 3000ms linear"
+    //     });
+    //     $body.css({
+    //         "max-height": "unset",
+    //         "min-height": "500px",
+    //         "overflow-y": "auto"
+    //     });
+    // },8000);
 
 });

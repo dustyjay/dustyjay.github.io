@@ -155,9 +155,9 @@ h6 br{
     z-index: -10;
 }
 
-.container-fluid.index{
+/* .container-fluid.index{
     top: 100vh;
-}
+} */
 
 .carousel{
     height: 100vh;
@@ -203,10 +203,10 @@ h6 br{
 }
 
 .slider.first img.saeon-img{
-    width: 85%;
-    max-width: 350px;
+    width: 90%;
+    max-width: 500px;
     position: absolute;
-    top: -8vh;
+    top: 3vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -219,7 +219,9 @@ h6 br{
     }
 
     .slider.first img.saeon-img{
-        top: -4%;
+        height: 63%;
+        width: auto;
+        max-width: unset;
     }
 }
 
@@ -240,7 +242,7 @@ h6 br{
     padding: 0 5%;
 }
 
-.slides.index img.saeon{
+/* .slides.index img.saeon{
     padding-top: 5vh;
 }
 
@@ -249,7 +251,7 @@ h6 br{
     .slides.index img.saeon{
         padding-top: 8vh;
     } 
-}
+} */
 
 .slides img{
     display: block;
@@ -259,23 +261,28 @@ h6 br{
 }
 
 img.mixtape,
-img.birth{
+img.birth,
+img.saeon{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 6%;
+}
+
+img.mixtape{
+    top: 17%;
 }
 
 img.birth{
-    bottom: 10%;
-    width: 80%;
+    top: 10%;
+    width: 90%;
     max-width: 400px;
 }
 
 img.saeon{
     width: 50%;
-    max-width: 400px;
+    max-width: 350px;
     min-width: 280px;
+    bottom: 10%;
 }
 
 .slick-arrow{
@@ -583,7 +590,7 @@ input::-moz-placeholder{
 }
 
 /* countdown */
-.container-fluid.clock{
+/* .container-fluid.clock{
     position: absolute;
     top: 0;
     width: 100%;
@@ -618,4 +625,4 @@ input::-moz-placeholder{
     padding-top: 30px;
     font-size: 16px;
     font-family: circular;
-}
+} */
