@@ -13,7 +13,30 @@
     
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
 </head>
-<body>
+<body id="index">
+    <div class="container-fluid clock">
+        
+        <div class="countdown">
+            <div id="clock" class="row">
+                <div class="col-3">
+                    <h2><span class="days"></span></h2>
+                    <div class="smalltext">days</div>
+                </div>
+                <div class="col-3">
+                    <h2><span class="hours"></span></h2>
+                    <div class="smalltext">hours</div>
+                </div>
+                <div class="col-3">
+                    <h2><span class="minutes"></span></h2>
+                    <div class="smalltext">mins</div>
+                </div>
+                <div class="col-3">
+                    <h2><span class="seconds"></span></h2>
+                    <div class="smalltext">secs</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container-fluid index">
         <div class="carousel">
@@ -225,11 +248,10 @@
     
 </body>
     <script src="assets/js/jquery3.3.1.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/jquery.mousewheel.min.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/clock.js"></script>
 </html>

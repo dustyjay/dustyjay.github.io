@@ -155,6 +155,10 @@ h6 br{
     z-index: -10;
 }
 
+.container-fluid.index{
+    top: 100vh;
+}
+
 .carousel{
     height: 100vh;
     min-height: 500px;
@@ -199,10 +203,10 @@ h6 br{
 }
 
 .slider.first img.saeon-img{
-    width: 90%;
+    width: 85%;
     max-width: 350px;
     position: absolute;
-    top: -7vh;
+    top: -8vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -212,6 +216,10 @@ h6 br{
 @media(min-width: 768px){
     .slides .slider{
         padding: 100px 80px;
+    }
+
+    .slider.first img.saeon-img{
+        top: -4%;
     }
 }
 
@@ -267,7 +275,7 @@ img.birth{
 img.saeon{
     width: 50%;
     max-width: 400px;
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .slick-arrow{
@@ -572,4 +580,42 @@ input::-moz-placeholder{
 .footer iframe{
     position: relative;
     top: -1px;
+}
+
+/* countdown */
+.container-fluid.clock{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #333;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.countdown{
+    margin: auto;
+}
+
+.countdown #clock{
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown h2 span{
+    padding: 20px 10px;
+    color: black;
+    border-radius: 3px;
+    background: #CEC40D;
+    margin-bottom: 20px;
+}
+
+.countdown .smalltext{
+    padding-top: 30px;
+    font-size: 16px;
+    font-family: circular;
 }
