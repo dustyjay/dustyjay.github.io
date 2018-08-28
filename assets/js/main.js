@@ -77,7 +77,7 @@ $(function(){
     $tidal_frame = $("#tidal-frame");
     $spotify_frame = $("#spotify-frame");
     $soundcloud_frame = $("#soundcloud-frame");
-    $itunes_frame = $("#itunes-frame");
+    // $itunes_frame = $("#itunes-frame");
 
 
     // change streaming form
@@ -118,36 +118,9 @@ $(function(){
             $spotify_frame.show(600);
         }
 
-        if(new_id == "itunes"){
-            $iframes.hide(400);
-            $itunes_frame.show(600);
-        }
+        // if(new_id == "itunes"){
+        //     $iframes.hide(400);
+        //     $itunes_frame.show(600);
+        // }
     });
-
-    // $countdown = $(".container-fluid.clock");
-    // $index = $(".container-fluid.index");
-    // $body = $("#index");
-
-    // $body.css({
-    //     "max-height": "100vh",
-    //     "min-height": "500px",
-    //     "overflow-y": "hidden"
-    // });
-
-    // setTimeout(function(){
-    //     $countdown.css({
-    //         "top": "-100vh",
-    //         "transition": "top 3000ms linear"
-    //     });
-    //     $index.css({
-    //         "top": "0px",
-    //         "transition": "top 3000ms linear"
-    //     });
-    //     $body.css({
-    //         "max-height": "unset",
-    //         "min-height": "500px",
-    //         "overflow-y": "auto"
-    //     });
-    // },8000);
-
 });
