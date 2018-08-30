@@ -183,7 +183,7 @@ h6 br{
 }
 
 .slider.first img.saeon-img{
-    top: 0vh
+    top: -4vh
 }
 
 @media(min-width: 768px){
@@ -230,12 +230,8 @@ img.saeon{
     right: 0;
 }
 
-.slider.first img.saeon{
-
-}
-
 .slider .top{
-    bottom: 20vh;
+    bottom: 24vh;
     width: 95%;
     margin: auto;
     min-height: 0;
@@ -256,7 +252,7 @@ img.saeon{
     border: 1px solid transparent;
     color: #000;
     position: absolute;
-    bottom: 4vh;
+    bottom: 5vh;
     left: 0;
     font-weight: bold;
     right: 0;
@@ -264,6 +260,7 @@ img.saeon{
     margin: auto;
     transition: 300ms ease-in-out;
     font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .slider a:hover{
@@ -271,13 +268,6 @@ img.saeon{
     color: #CEC40D;
     border: 1px solid #CEC40D;
     transition: 300ms ease-in-out;
-}
-
-
-@media(min-width: 768px){
-    .slider a{
-        bottom: 2vh;
-    }
 }
 
 img.mixtape{
