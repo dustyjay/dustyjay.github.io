@@ -175,11 +175,15 @@ h6 br{
     width: 90%;
     max-width: 500px;
     position: absolute;
-    top: 3vh;
+    top: 4vh;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
+}
+
+.slider.first img.saeon-img{
+    top: 0vh
 }
 
 @media(min-width: 768px){
@@ -188,7 +192,7 @@ h6 br{
     }
 
     .slider.first img.saeon-img{
-        height: 63%;
+        height: 60%;
         width: auto;
         max-width: unset;
     }
@@ -217,29 +221,84 @@ h6 br{
     margin: auto;
 }
 
-img.mixtape,
-img.birth,
+/* img.mixtape,
+img.birth, */
+.slider .top,
 img.saeon{
     position: absolute;
     left: 0;
     right: 0;
 }
 
+.slider.first img.saeon{
+
+}
+
+.slider .top{
+    bottom: 20vh;
+    width: 95%;
+    margin: auto;
+    min-height: 0;
+    height: 0;
+    max-width: 500px;
+}
+
+.slider .top > div{
+    position: relative;
+    min-height: 0;
+    height: 0;
+}
+
+.slider a{
+    padding: 5px 20px;
+    background: #CEC40D;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    color: #000;
+    position: absolute;
+    bottom: 4vh;
+    left: 0;
+    font-weight: bold;
+    right: 0;
+    width: fit-content;
+    margin: auto;
+    transition: 300ms ease-in-out;
+    font-size: 14px;
+}
+
+.slider a:hover{
+    background: black;
+    color: #CEC40D;
+    border: 1px solid #CEC40D;
+    transition: 300ms ease-in-out;
+}
+
+
+@media(min-width: 768px){
+    .slider a{
+        bottom: 2vh;
+    }
+}
+
 img.mixtape{
-    top: 17%;
+    float: right;
+    margin-right: 9px;
+    margin-top: -6px;
+    width: 30%;
+    min-width: 80px;
+    max-width: 100px;
 }
 
 img.birth{
-    top: 10%;
-    width: 90%;
+    width: 100%;
     max-width: 500px;
 }
 
 img.saeon{
-    width: 70%;
-    max-width: 400px;
-    min-width: 200px;
-    bottom: 10%;
+    width: 50%;
+    max-width: 250px;
+    min-width: 150px;
+    top: 10%;
 }
 
 .slick-arrow{
