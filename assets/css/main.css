@@ -67,11 +67,6 @@ h5{
 }
 h6{
     font-size: 1.3pc;
-    /* line-height: 2rem; */
-    /* font-weight: 600; */
-}
-h6 .botbc{
-    /* font-size: 1.5pc; */
 }
 
 h6 br{
@@ -82,17 +77,11 @@ h6 br{
     h6{
         font-size: 1.5pc;
     }
-    h6 .botbc{
-        /* font-size: 1.7pc; */
-    }
 }
 
 @media(min-width: 400px){
     h6{
         font-size: 1.8pc;
-    }
-    h6 .botbc{
-        /* font-size: 2pc; */
     }
 }
 
@@ -100,17 +89,11 @@ h6 br{
     h6{
         font-size: 24px;
     }
-    h6 .botbc{
-        /* font-size: 22px; */
-    }
 }
 
 @media(min-width: 568px){
     h6{
         font-size: 28px;
-    }
-    h6 .botbc{
-        /* font-size: 26px; */
     }
 }
 
@@ -133,31 +116,20 @@ h6 br{
     h6{
         font-size: 30px;
     }
-    
-    h6 .botbc{
-        /* font-size: 30px; */
-    }
 }
 
 @media(min-width: 1024px){
     h6{
         font-size: 36px;
     }
-    h6 .botbc{
-        /* font-size: 36px; */
-    }
 }
 
 .container-fluid{
     padding: 0;
-    max-width: 1960px;
+    max-width: 1680px;
     position: relative;
     z-index: -10;
 }
-
-/* .container-fluid.index{
-    top: 100vh;
-} */
 
 .carousel{
     height: 100vh;
@@ -168,13 +140,10 @@ h6 br{
 .slides{
     width: 100%;
     margin: auto;
-    /* background: black; */
-    /* padding: 20px; */
 }
 
 .slider{
     height: 100vh;
-    /* min-height: 400px; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -184,6 +153,7 @@ h6 br{
 .slides{
     text-align: center;
     height: 100vh;
+    min-height: 500px;
 }
 
 .slides .slider{
@@ -195,7 +165,6 @@ h6 br{
 
 .slides.index .slider{
     padding: 20px;
-    /* padding-top: 80px; */
 }
 
 .slider.first{
@@ -242,22 +211,10 @@ h6 br{
     padding: 0 5%;
 }
 
-/* .slides.index img.saeon{
-    padding-top: 5vh;
-}
-
-@media(min-width: 768px){
-    
-    .slides.index img.saeon{
-        padding-top: 8vh;
-    } 
-} */
-
 .slides img{
     display: block;
     text-align: center;
     margin: auto;
-    /* width: 100%; */
 }
 
 img.mixtape,
@@ -275,13 +232,13 @@ img.mixtape{
 img.birth{
     top: 10%;
     width: 90%;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 img.saeon{
-    width: 50%;
-    max-width: 350px;
-    min-width: 280px;
+    width: 70%;
+    max-width: 400px;
+    min-width: 200px;
     bottom: 10%;
 }
 
@@ -343,7 +300,6 @@ img.saeon{
 }
 
 .videos .spotify iframe{
-    /* height: 100%; */
     margin-top: 8px;
     max-height: 400px
 }
@@ -363,7 +319,6 @@ img.saeon{
     width: 90%;
     margin: auto;
     min-height: 130px;
-    /* margin-bottom: 30px; */
 }
 
 .videos .video-text h4{
@@ -424,7 +379,6 @@ img.saeon{
 .video-text .dropdown li a{
     color: black;
     display: block;
-    /* width: 100%; */
 }
 
 .video-text .dropdown li img{
@@ -570,7 +524,6 @@ input::-moz-placeholder{
 
 .footer .socials img:hover{
     opacity: 0.8;
-    /* transition: opacity 300ms ease-in-out; */
 }
 
 .footer .socials div:last-child img{
@@ -590,6 +543,8 @@ input::-moz-placeholder{
 }
 
 /* countdown */
+
+
 /* .container-fluid.clock{
     position: absolute;
     top: 0;
